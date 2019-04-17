@@ -4,14 +4,6 @@ import bs4 as bs
 import urllib.parse
 import re
 
-"""
-
-@FunkoFucked at it again - All y'all other groups keep being late, I had this shit made LAST YEAR.
-
-Stop flexing stupid shit like this in your shitty washed groups where you charge people way too much, 
-this is literally 12 minutes/76 lines of code while I had katyelisehenry shaking her ass in the background.
-
-"""
 r = requests.session()
 
 search_url = 'https://stashpedia.com/search?terms='
@@ -20,7 +12,7 @@ headers = {
 }
 
 client = discord.Client()
-token = 'NDcyMTc3MTcxODI2MjFunkoFuckedTookStockbP5gA1lYDHNUFOAoENGM'
+token = 'NTY2NzAxOTE4NTkyNjk2MzMy.XLa1Xw.Lbi9dvFPKQ84Up6diaIF5XR53f0'
 
 
 @client.event
@@ -70,7 +62,6 @@ async def on_message(message):
         embed.add_field(name="Product Name", value="[{}]({})".format(name, url), inline=False)
         embed.add_field(name="Trending at", value="{}".format(price), inline=True)
         embed.add_field(name="Category", value="{}".format(category), inline=True)
-        embed.add_field(name="Who took stock?", value="FunkoFucked did", inline=True)
 
         await client.send_message(message.channel, embed=embed)
 
